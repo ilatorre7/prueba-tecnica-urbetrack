@@ -1,0 +1,13 @@
+.bookmark-button {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  z-index: 5;
+}
+
+.card-image {
+  display: 'block';
+  object-fit: 'cover';
+  width: '100%';
+  height: 360;
+}
