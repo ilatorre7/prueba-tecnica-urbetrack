@@ -1,8 +1,8 @@
-import '../styles/Menu.css'
+import '../../styles/Menu.css'
 import { ChevronLeftIcon, HamburgerMenuIcon } from "@radix-ui/react-icons"
 import { Avatar, Button, Flex, IconButton, Link, Separator, Text } from "@radix-ui/themes"
-import { Logo } from "./Logo"
-import { useUserStore } from "../stores"
+import { Logo } from "../atoms/Logo"
+import { useUserStore } from "../../stores"
 import { useNavigate } from "react-router-dom"
 
 const MenuClosed = ({  onMenuClick } : { onMenuClick: () => void }) => {

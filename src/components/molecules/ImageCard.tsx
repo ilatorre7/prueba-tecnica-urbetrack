@@ -1,7 +1,7 @@
-import '../styles/ImageCard.css'
+import '../../styles/ImageCard.css'
 import { BookmarkFilledIcon, BookmarkIcon } from "@radix-ui/react-icons"
 import { Box, Card, Flex, IconButton, Skeleton, Text, Tooltip } from "@radix-ui/themes"
-import { IImage } from '../types'
+import { IImage } from '../../types'
 import { MouseEvent } from 'react'
 
 interface ImageCardActions {

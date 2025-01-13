@@ -1,12 +1,12 @@
 import { useInView } from "react-intersection-observer";
 
 import { Layout } from "../components/Layout";
-import { ImageCardList } from "../components/ImageCardList";
+import { ImageCardList } from "../components/organisms/ImageCardList";
 import { Flex, Heading, Spinner } from "@radix-ui/themes";
 import { useEffect } from "react";
 import { useGetImages } from "../hooks/useGetImages";
-import { LoadingScreen } from "../components/LoadingScreen";
-import { ErrorScreen } from "../components/ErrorScreen";
+import { LoadingScreen } from "../components/molecules/LoadingScreen";
+import { ErrorScreen } from "../components/molecules/ErrorScreen";
 
 export const Home = () => {
   const { ref, inView } = useInView();

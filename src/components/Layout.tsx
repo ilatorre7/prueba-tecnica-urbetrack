@@ -1,5 +1,5 @@
 import { Flex } from "@radix-ui/themes"
-import { Menu } from "./Menu"
+import { Menu } from "./molecules/Menu"
 import { useUserStore } from "../stores"
 
 export const Layout = ({ children } : { children: React.ReactNode }) => {

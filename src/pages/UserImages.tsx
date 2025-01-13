@@ -1,5 +1,5 @@
 import { Layout } from "../components/Layout";
-import { ImageCardList } from "../components/ImageCardList";
+import { ImageCardList } from "../components/organisms/ImageCardList";
 import { Flex, Heading, Link, Text } from "@radix-ui/themes";
 import { useUserStore } from "../stores";
 

@@ -1,8 +1,8 @@
 import { Grid } from "@radix-ui/themes"
-import { ImageCard } from "./ImageCard"
+import { ImageCard } from "../molecules/ImageCard"
 import { useNavigate } from "react-router-dom"
-import { IImage } from "../types"
-import { useBookmarks } from "../hooks/useBookmarks"
+import { IImage } from "../../types"
+import { useBookmarks } from "../../hooks/useBookmarks"
 
 export const ImageCardList = ({ images } : { images: IImage[] }) => {
   const navigate = useNavigate();

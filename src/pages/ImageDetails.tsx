@@ -4,10 +4,10 @@ import { useNavigate, useParams } from "react-router-dom";
 import '../styles/ImageDetails.css'
 import { Layout } from "../components/Layout";
 import { BookmarkFilledIcon, BookmarkIcon, ChevronLeftIcon } from "@radix-ui/react-icons";
-import { LoadingScreen } from "../components/LoadingScreen";
+import { LoadingScreen } from "../components/molecules/LoadingScreen";
 import { useBookmarks } from "../hooks/useBookmarks";
 import { IImage } from "../types";
-import { ErrorScreen } from "../components/ErrorScreen";
+import { ErrorScreen } from "../components/molecules/ErrorScreen";
 
 const ImageDatalist = ({ author, width, height, url } : IImage) => (
   <DataList.Root>
