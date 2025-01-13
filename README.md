@@ -30,5 +30,4 @@ The application is deployed at the following url: [Urbetrack Technical Test](htt
 ## Credentials
 
 In order to log in, the username must be a lowercase string (no numbers or special characters allowed) and the password is 123 plus the username starting with capital letter. Here is an example:
-```username: franco
-   password: 123Franco```
+```username: franco password: 123Franco```
