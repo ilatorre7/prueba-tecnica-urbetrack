@@ -4,6 +4,11 @@ import { Box, Card, Flex, IconButton, Skeleton, Text, Tooltip } from "@radix-ui/
 import { IImage } from '../types'
 import { MouseEvent } from 'react'
 
+interface ImageCardActions {
+  onDetailsClick: () => void, 
+  onBookmarkClick: (e: MouseEvent) => void
+}
+
 const Bookmark = ({ bookmarked, onClick }: {bookmarked: boolean, onClick: (e: MouseEvent) => void}) => (
   <Tooltip content={bookmarked ? 'Remove Image' : 'Save Image'}>
     <IconButton variant='solid' size='2' className='bookmark-button' onClick={onClick}>
@@ -18,25 +23,17 @@ export const ImageCard = ({
   bookmarked, 
   onDetailsClick, 
   onBookmarkClick
-} : IImage & {
-  onDetailsClick: () => void, 
-  onBookmarkClick: (e: MouseEvent) => void
-}) => {
+} : IImage & ImageCardActions) => {
   
   return (
     <Box position='relative'>
-      <Card onClick={onDetailsClick}>
+      <Card className='card' onClick={onDetailsClick}>
         <Bookmark bookmarked={bookmarked} onClick={onBookmarkClick} />
         <Flex direction='column' gap='2'>
           <Skeleton>
             <img 
               src={`https://picsum.photos/id/${id}/${480}/${360}`}
-              style={{
-                display: 'block',
-                objectFit: 'cover',
-                width: '100%',
-                height: 360,
-              }}
+              className='card-image'
               alt='Unsplash picture'
             />
           </Skeleton>

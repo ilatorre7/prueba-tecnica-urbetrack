@@ -8,7 +8,7 @@ export const ImageCardList = ({ images } : { images: IImage[] }) => {
   const navigate = useNavigate();
   
   const { handleBookmark, isBookmarked } = useBookmarks();
-  
+
   return (
     <Grid columns='3' gap='3'>
       {images.map((image) => {
