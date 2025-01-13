@@ -1,50 +1,33 @@
-# React + TypeScript + Vite
+# Urbetrack Technical test
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a Technical Test for Urbetrack powered by React, React Query, React Router Dom, Zustand, Vitest and React Testing Library
 
-Currently, two official plugins are available:
+## Getting started
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+These instructions will give you a copy of the project up and running on your local machine for development and testing purposes.
 
-## Expanding the ESLint configuration
+### Pre-requisites
+- Node.js LTS
+- [bun.js](https://bun.sh/)
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+### Installing
 
-- Configure the top-level `parserOptions` property like this:
+1. Clone the repository
+2. Run the following command to install dependencies
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+``` bun install ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+### Run the application
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+1. Ejecutar el siguiente comando para correr la aplicacion en un entorno local
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+``` bun run dev ```
+
+## Deployment
+
+The application is deployed at the following url: [Urbetrack Technical Test](https://prueba-tecnica-urbetrack.vercel.app/)
+
+## Credentials
+
+In order to log in, the username must be a lowercase string (no numbers or special characters allowed) and the password is 123 plus the username starting with capital letter. Here is an example:
+```username: franco password: 123Franco```
